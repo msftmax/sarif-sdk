@@ -23,30 +23,17 @@ $Frameworks.All = ($Frameworks.Library + $Frameworks.Application | Select -Uniqu
 $Projects = @{}
 
 $Projects.Libraries = @(
-    "Sarif",
-    "Sarif.Converters",
-    "Sarif.Driver",
-    "Sarif.Multitool.Library"
-    "Sarif.WorkItems",
-    "WorkItems"
+    "Sarif"
 )
 
 $Projects.Applications = @(
-    "Sarif.Multitool"
+ 
     )
 
 $Projects.Products = $Projects.Libraries + $Projects.Applications
 
 $Projects.Tests = @(
-    "Test.EndToEnd.Baselining"
-    "Test.FunctionalTests.Sarif",
-    "Test.UnitTests.Sarif",
-    "Test.UnitTests.Sarif.Converters",
-    "Test.UnitTests.Sarif.Driver",
-    "Test.UnitTests.Sarif.Multitool",
-    "Test.UnitTests.Sarif.Multitool.Library",
-    "Test.UnitTests.Sarif.WorkItems",
-    "Test.Utilities.Sarif"
+    "Test.UnitTests.Sarif"
     )
 
 $Projects.All = $Projects.Products + $Projects.Tests

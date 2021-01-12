@@ -211,7 +211,7 @@ if (-not $?) {
 }
 
 if (-not $NoBuild) {
-    Invoke-DotNetBuild $SolutionFile
+    #Invoke-DotNetBuild $SolutionFile
     Invoke-DotNetBuild $sampleSolutionFile
 }
 
